@@ -1,5 +1,7 @@
+
 import { useEffect, useState } from 'react'
 import { supabase } from './../utils/supabaseClient'
+
 
 export default function UserLinks({ user_id }) {
     const [links, setLinks] = useState([]);
@@ -45,7 +47,8 @@ export default function UserLinks({ user_id }) {
         <input className="border p-2 mr-2" type="text" onChange={(e) => setLink(e.target.value)} value={link}></input>
         <button className="p-2 rounded bg-black text-white" onClick={addLink}>Add</button>
         <ul className="list-disc">
-            {links.map(item => <li key={item.id}>{item.name}</li>)}
+             {links && links.map(item => <li key={item.id}>{item.name}</li>)}
+
         </ul>
     </div>
 }
