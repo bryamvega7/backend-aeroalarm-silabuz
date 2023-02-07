@@ -24,10 +24,6 @@
 
 ## API 👾🎮♟🎲📲
 
-## Endpoint description:
-
-### Create user
-
 #### ⚡ Link de front end
 https://github.com/kenyihq/project-aeroalarm-silabuz
 
