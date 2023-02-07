@@ -26,5 +26,24 @@ try {
     return res.status(500).json({ message: error });
     }
 };
+
+
+const getUsers = async (req: Request, res: Response) => {
+    const headers = {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+    };
     
-export default { postUser };
+    const url = 'https://cotikmecrrykjmssypxs.supabase.co/rest/v1/users?select=*';
+    
+    try {
+        const response = await axios.get(url, { headers });
+        return res.status(200).json(response.data);
+    } catch (error) {
+        return res.status(500).json({ message: error });
+    }
+    };
+    
+    export default { postUser, getUsers };
