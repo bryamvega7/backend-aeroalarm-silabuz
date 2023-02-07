@@ -3,6 +3,7 @@ import * as ROUTES from "../components";
 
 const _routes: [string, Router][] = [
   ["flightlabs", ROUTES.flightlabsRouter],
+  ["supabase", ROUTES.supabaseRouter],
 ];
 
 const routes = (app: Application): void => {
