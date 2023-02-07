@@ -11,7 +11,7 @@ const postUser = async (req: Request, res: Response) => {
   const { firstName, lastName, email, password, phone } = req.body;
   
   const hashedPassword = await bcrypt.hash(password, 10);
-  console.
+  
   const headers = {
     'apikey': SUPABASE_KEY,
     'Authorization': `Bearer ${SUPABASE_KEY}`,
