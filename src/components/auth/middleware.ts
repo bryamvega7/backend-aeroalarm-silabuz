@@ -21,3 +21,5 @@ export const checkAuth = async (req: Request & { userId?: string }, res: Respons
         res.status(401).json({ message: "Token invalido" });
     }
 };
+
+export default { checkAuth };
