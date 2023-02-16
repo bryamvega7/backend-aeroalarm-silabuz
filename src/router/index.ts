@@ -6,6 +6,7 @@ const _routes: [string, Router][] = [
   ["supabase", ROUTES.supabaseRouter],
   ["login", ROUTES.loginRouter],
   ["auth", ROUTES.authRouter],
+  ["twilio", ROUTES.twilioRouter],
 ];
 
 const routes = (app: Application): void => {

@@ -22,6 +22,7 @@
     "react-js-switch": "^1.1.6",
     "react-redux": "^8.0.5",
     "request": "^2.88.2",
+    "twilio": "^4.7.2",
     "web-vitals-reporter": "^1.0.0"
   },
   "devDependencies": {
